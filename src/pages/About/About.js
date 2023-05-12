@@ -8,6 +8,8 @@ import AboutModal from "../../components/AboutModal/about-modal.component";
 import AboutCard from "../../components/AboutCard/about-card.component";
 
 function About({ content }) {
+  
+  //
   const aboutCardsDetails = [
     {
       id: 0,
@@ -55,6 +57,14 @@ function About({ content }) {
         "These glasses enable the wearer to see three dimensional images which give an illusion of depth of perception. For example, if the wearer is using virtual reality for architectural purposes then they will be able to view a building at different angles, and walk through or around it.",
       imageName: "oculus.png",
     },
+    // {
+    //   id: 4,
+    //   title: "Digital Storytelling",
+    //   content:
+    //     "Digital Storytelling uses multimedia tools to bring narratives to life. Digital Stories can be used to explain a concept, to reflect on a personal experience, to retell a historical event or to make an argument. Digital stories are typically videos that combine audio, images, and video clips to tell a story.",
+    //   imageName: "digital-storytelling.png",
+    // },
+    
   ];
 
   //
@@ -112,18 +122,14 @@ function About({ content }) {
 
           <div className="container pt-5 about-banner-text mt-md-5">
             <div className="row justify-content-center">
-              <div className="col-11 col-md-6  text-center">
-                <h1 className="text-center mt-5">
+              <div className="col-11 col-md-6 text-center">
+                <h1 className="text-center">
                   Maker<span className="about-title-diff">Space</span>
                 </h1>
                 <p>
-                  Established in December 2015, the Maker Space of the Baku
-                  American Center provides free classes on STEM, 3D designs and
-                  printing, robotics, and other classes. Space can be considered
-                  as an entrepreneurial lab for young creators. Also, the center
-                  includes a special book collection.
+                  Established in December 2015, the Maker Space of the Baku American Center provides free classes on STEM, 3D designs and printing, robotics, and other classes. Space can be considered as an entrepreneurial lab for young creators. Also, the center includes a special book collection.
                 </p>
-                <div className="mt-4 d-flex flex-column align-items-center">
+                <div className="pt-4 d-flex flex-column align-items-center">
                   <h4 className="text-light about-subtitle-diff">
                     Our activities
                   </h4>

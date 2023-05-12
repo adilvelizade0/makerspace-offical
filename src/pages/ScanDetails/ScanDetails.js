@@ -19,7 +19,7 @@ function ScanDetails({ qrCode }) {
         </div>
       )}
       {qrCodeFromState && (
-        <div className="container my-5">
+        <div style={{ paddingTop: "105px" }} className="container pb-5">
           <h1>{qrCodeFromState.title}</h1>
 
           <div className="row">

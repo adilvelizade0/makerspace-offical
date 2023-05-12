@@ -1,6 +1,8 @@
 import React from "react";
 import Gallery from "../../components/Gallery";
 import { Helmet } from "react-helmet";
+import Hero2 from "../../components/Hero2/hero2.component";
+import { isMobile } from "react-device-detect";
 
 function Home({ content }) {
   return (
@@ -8,9 +10,10 @@ function Home({ content }) {
       <Helmet>
         <title>Home</title>
       </Helmet>
-      <div style={{ paddingTop: "95px" }}>
-        <Gallery content={content} />
-      </div>
+
+      {!isMobile && <Hero2 />}
+
+      <Gallery content={content} />
     </>
   );
 }

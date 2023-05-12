@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 const AboutWrapper = styled.div`
+  background-color: aliceblue;
+  position: relative;
+  z-index: 0;
+  padding-top: 98px;
+
   #tsparticles {
     position: absolute;
     top: 0;
@@ -18,7 +23,7 @@ const AboutWrapper = styled.div`
 
     .about-banner-text {
       position: relative;
-      z-index: 0;
+      z-index: 1;
 
       h1 {
         font-size: 3rem;
@@ -38,7 +43,8 @@ const AboutWrapper = styled.div`
 
       .about-subtitle-diff {
         border-bottom: 1px solid #0cc9c3;
-        padding: 0 10px 7px 10px;
+
+        padding-bottom: 7px;
         border-radius: 10px;
       }
     }
